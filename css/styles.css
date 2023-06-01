@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: FAFAFA;
 }
 a {
   text-decoration: none;
@@ -19,6 +20,9 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0;
+}
+img {
+  display: block;
 }
 ul {
   list-style-type: none;
@@ -43,7 +47,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .header-container {
   display: flex;
@@ -158,15 +162,24 @@ ul {
 /** ---------HERO--------- */
 .benefits {
   background: #1E1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .benefits-container {
 
+
 }
 .benefits-list {
+  display: flex;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
+
 }
 
 .benefits-item {
+  width: calc((100%-176px)/3);
 }
 
 .benefits-subtitle {
@@ -174,6 +187,7 @@ ul {
   font-size: 18px;
   line-height: 1.22;
   color: #ffffff;
+  margin-bottom: 18px;
 }
 
 .benefits-item-text {
@@ -185,25 +199,49 @@ ul {
 /* products */
 
 .products {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .products-container {
 
+
 }
 .products-title {
+  max-width: 411px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .products-text {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-
+  max-width: 486px;
   color: #111111;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 28px;
 }
 
 .products-list {
+  display: flex;
+  gap: 19px;
 }
-
+.products-item:nth-child(even) {
+  background-color: #fff;
+}
+.products-item:nth-child(3) {
+  background-color: #1E1823;
+}
+.products-item:first-child {
+  background-color: #fd9222;
+}
 .products-item {
+  width: calc((100% - 19px*3)/4);
+  border-radius: 15px;
+  padding: 28px 36px 28px 28px;
+  border: 1px solid #FD9222;
 }
 
 .products-subtitle {
@@ -212,6 +250,7 @@ ul {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  margin-top: 36px;
 }
 .products-subtitle.light {
   color: #fff;
@@ -219,7 +258,23 @@ ul {
 .products-subtitle.dark {
   color: #111;
 }
+.main-container {
+
+}
+.main-wrap {
+display: flex;
+gap: 52px;
+padding: 20px;
+
+}
+.made-content {
+ padding-top: 32px;
+ border-radius: 15px;
+ background-color: #fff;
+}
 .made-title {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .made-img {
@@ -230,12 +285,20 @@ ul {
   font-size: 18px;
   line-height: 1.33;
   color: #111111;
+  max-width: 350px;
+  margin-bottom: 28px;
 }
 
 .made-list {
+  /* display: flex;
+  flex-direction: column;
+  gap: 24px; */
+  max-width: 452px;
+  padding-left: 16px;
 }
 
-.made-item {
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .made-item-text {
@@ -244,6 +307,13 @@ ul {
   letter-spacing: -0.02em;
   color: #111111;
 }
+.loved {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.loved-container {
+
+}
 .loved-title {
   font-weight: 600;
   font-size: 24px;
@@ -251,12 +321,23 @@ ul {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  text-align: center;
+  margin-bottom: 91px;
 }
 
 .loved-list {
+  display: flex;
+  gap: 28px;
+margin-bottom: 50px;
 }
 
 .loved-item {
+width: calc((100% - 56px) / 3);
+background-color: #fff;
+border: 1px solid rgba(17, 17, 17, 0.1);
+box-shadow: 0px 9.04932px 100px rgba(17, 17, 17, 0.03);
+border-radius: 15px;
+padding: 56px 24px 24px 24px;
 }
 
 .loved-item-subtitle {
@@ -264,6 +345,8 @@ ul {
   font-size: 18px;
   line-height: 1.33;
   color: #111111;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .loved-item-text {
@@ -271,6 +354,7 @@ ul {
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  text-align: center;
 }
 
 .loved-btn {
@@ -280,21 +364,50 @@ ul {
   line-height: 1.22;
   cursor: pointer;
   color: #111111;
+  background-color: transparent;
+  padding: 14px 40px;
+  border: 1px solid #FD9222;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1e1823;
 }
+.footer-container {
 
+}
 .footer-text {
+  max-width: 300px;
+  font-family: 'Montserrat';
+font-weight: 500;
+font-size: 28px;
+line-height: 1.21;
+letter-spacing: -0.02em;
+
 }
 
 .footer-contact {
+}
+.footer-contact-cont {
+
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 54px;
+  margin-bottom: 24px;
 }
 
 .footer-address {
 }
 
 .footer-address-list {
+  
 }
 
 .footer-address-item {
@@ -307,6 +420,8 @@ ul {
 }
 
 .footer-menu {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-menu-item {
